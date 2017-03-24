@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.MainThread;
 import android.support.annotation.NonNull;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -45,6 +46,8 @@ public class FeedActivity extends AppCompatActivity implements View.OnClickListe
         logout.setOnClickListener(this);
         Button newsocial = (Button) findViewById(R.id.button6);
         newsocial.setOnClickListener(this);
+        FloatingActionButton floatbutton = (FloatingActionButton) findViewById(R.id.floatingActionButton);
+        floatbutton.setOnClickListener(this);
 
         //set up recycler view
         rview = (RecyclerView) findViewById(R.id.recyclableView);
@@ -110,7 +113,7 @@ public class FeedActivity extends AppCompatActivity implements View.OnClickListe
             Intent intent = new Intent(getApplicationContext(),MainActivity.class);
             startActivity(intent);
 
-        } else if (view.getId() == R.id.button6) {
+        } else if (view.getId() == R.id.floatingActionButton) {
             Intent intent = new Intent(getApplicationContext(),NewSocialActivity.class);
             startActivity(intent);
         }
