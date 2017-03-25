@@ -3,6 +3,7 @@ package com.example.shiv.mdbsocials;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -28,9 +29,13 @@ public class UsersInterestedActivity extends AppCompatActivity {
 
         //setup recyclerview
         rview = (RecyclerView) findViewById(R.id.rview2);
-        rview.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
+        LinearLayoutManager manager = new LinearLayoutManager(getApplicationContext());
+        rview.setLayoutManager(manager);
         userAdapter = new UserAdapter(getApplicationContext(), new ArrayList<User>());
         rview.setAdapter(userAdapter);
+        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(rview.getContext(),
+                manager.getOrientation());
+        rview.addItemDecoration(dividerItemDecoration);
 
         Intent intent = getIntent();
         final String firebasekey = intent.getStringExtra("key");

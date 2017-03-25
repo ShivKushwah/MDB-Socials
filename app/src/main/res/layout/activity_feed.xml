@@ -8,14 +8,15 @@
     tools:context="com.example.shiv.mdbsocials.FeedActivity">
 
     <Button
-        android:text="Log Out"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/button5"
-        android:layout_marginStart="16dp"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="73dp"
+        android:layout_height="34dp"
         android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Log Out"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <android.support.v7.widget.RecyclerView
