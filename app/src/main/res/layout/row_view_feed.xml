@@ -7,86 +7,86 @@
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="100dp">
 
         <TextView
-            android:text="Email"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/textView12"
-            android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
             android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Email"
             app:layout_constraintLeft_toRightOf="@+id/textView15"
-            android:layout_marginLeft="8dp" />
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
         <TextView
-            android:text="Name of Event"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/textView13"
-            android:layout_marginTop="16dp"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginStart="8dp"
-            app:layout_constraintLeft_toRightOf="@+id/textView11"
-            android:layout_marginLeft="8dp" />
-
-        <TextView
-            android:text="Number RSVPed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView14"
-            android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/textView12"
+            android:layout_marginLeft="8dp"
             android:layout_marginStart="8dp"
-            app:layout_constraintLeft_toRightOf="@+id/textView16"
-            android:layout_marginLeft="8dp" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="64dp"
-            app:srcCompat="@mipmap/ic_launcher"
-            android:id="@+id/imageView5"
-            android:layout_marginStart="16dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
+            android:text="Name of Event"
+            app:layout_constraintLeft_toRightOf="@+id/textView11"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:text="Event Name:"
+            android:id="@+id/textView14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView11"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Number RSVPed"
+            app:layout_constraintLeft_toRightOf="@+id/textView16"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginStart="8dp"
-            app:layout_constraintLeft_toRightOf="@+id/imageView5"
-            android:layout_marginLeft="8dp" />
+            app:srcCompat="@mipmap/ic_launcher" />
 
         <TextView
-            android:text="Organizer:"
+            android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Event Name:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:layout_constraintLeft_toRightOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
             android:id="@+id/textView15"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-            android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/textView11"
-            android:layout_marginStart="8dp"
-            app:layout_constraintLeft_toRightOf="@+id/imageView5"
-            android:layout_marginLeft="8dp" />
-
-        <TextView
-            android:text="RSVPs:"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView16"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-            android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/textView15"
+            android:layout_marginLeft="8dp"
             android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Organizer:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             app:layout_constraintLeft_toRightOf="@+id/imageView5"
-            android:layout_marginLeft="8dp" />
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="RSVPs:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:layout_constraintLeft_toRightOf="@+id/imageView5"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
     </android.support.constraint.ConstraintLayout>
 </android.support.v7.widget.CardView>

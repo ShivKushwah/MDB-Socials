@@ -7,6 +7,7 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -44,16 +45,19 @@ public class FeedActivity extends AppCompatActivity implements View.OnClickListe
         //initialize on click listeners for buttons
         Button logout = (Button) findViewById(R.id.button5);
         logout.setOnClickListener(this);
-        Button newsocial = (Button) findViewById(R.id.button6);
-        newsocial.setOnClickListener(this);
         FloatingActionButton floatbutton = (FloatingActionButton) findViewById(R.id.floatingActionButton);
         floatbutton.setOnClickListener(this);
 
+
         //set up recycler view
         rview = (RecyclerView) findViewById(R.id.recyclableView);
-        rview.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
+        LinearLayoutManager manager = new LinearLayoutManager(getApplicationContext());
+        rview.setLayoutManager(manager);
         eventAdapter = new EventAdapter(getApplicationContext(), getList());//events);
         rview.setAdapter(eventAdapter);
+        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(rview.getContext(),
+                manager.getOrientation());
+        rview.addItemDecoration(dividerItemDecoration);
     }
 
 
