@@ -9,8 +9,8 @@ Features:
 - Option to RSVP for an event  
 - Page to create new event  
 
-![Alt text](/Screenshot_20170326-131906?raw=true "Screenshot 1")
-![Alt text](/Screenshot_20170326-131947?raw=true "Screenshot 2")
-![Alt text](/Screenshot_20170326-132015?raw=true "Screenshot 3")
+![Alt text](/Screenshot_20170326-131906.png?raw=true "Screenshot 1")
+![Alt text](/Screenshot_20170326-131947.png?raw=true "Screenshot 2")
+![Alt text](/Screenshot_20170326-132015.png?raw=true "Screenshot 3")
 
 
